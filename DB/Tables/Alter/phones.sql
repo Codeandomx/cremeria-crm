@@ -1,0 +1,1 @@
+alter table phones modify phone varchar(10) NOT NULL;

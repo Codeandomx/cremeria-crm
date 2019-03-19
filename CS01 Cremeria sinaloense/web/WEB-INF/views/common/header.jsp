@@ -35,7 +35,7 @@ Header start
                         <span class="icon-bar"></span>
                       </button>
                           <a class="navbar-brand" href="#">
-                            <img src="images/logo.png" alt="Logo">
+                            <img src="${base}images/logo.png" alt="Logo">
                           </a>
 
                     </div>
@@ -43,12 +43,13 @@ Header start
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                       <ul class="nav navbar-nav navbar-right" id="top-nav">
-                        <li><a href="#hero-area">Home</a></li>
-                        <li><a href="#about-us">about us</a></li>
-                        <li><a href="#blog">Blog</a></li>
-                        <li><a href="#price">menu</a></li>
-                        <li><a href="#subscribe">news</a></li>
-                        <li><a href="#contact-us">contacts</a></li>
+                        <li><a href="#hero-area">Inicio</a></li>
+                        <li><a href="#about-us">Nosotros</a></li>
+                        <li><a href="#price">Menu</a></li>
+                        <li><a href="#blog">Productos</a></li>
+                        <li><a href="#blog">Carrito</a></li>
+                        <li><a href="#contact-us">contactos</a></li>
+                        <li><a href="#subscribe">Login</a></li>
                       </ul>
                     </div><!-- /.navbar-collapse -->
                   </div><!-- /.container-fluid -->

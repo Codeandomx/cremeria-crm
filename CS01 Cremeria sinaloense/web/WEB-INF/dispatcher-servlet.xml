@@ -23,6 +23,13 @@
         <property name="mappings">
             <props>
                 <prop key="index.htm">indexController</prop>
+                <prop key="about.htm">aboutController</prop>
+                <prop key="menu.htm">menuController</prop>
+                <prop key="products.htm">productsController</prop>
+                <prop key="cart.htm">cartController</prop>
+                <prop key="contact.htm">contactController</prop>
+                <prop key="login.htm">loginController</prop>
+                <prop key="admin.htm">adminController</prop>
             </props>
         </property>
     </bean>
@@ -35,9 +42,38 @@
     <!--
     The index controller.
     -->
+    <bean name="aboutController"
+          class="com.sinaloense.Views.AboutController"
+    />
+    
+    <bean name="menuController"
+          class="com.sinaloense.Views.MenuController"
+    />
+    
+    <bean name="productsController"
+          class="com.sinaloense.Views.ProductsController"
+    />
+    
+    <bean name="cartController"
+          class="com.sinaloense.Views.CartController"
+    />
+    
+    <bean name="contactController"
+          class="com.sinaloense.Views.ContactController"
+    />
+    
+    <bean name="loginController"
+          class="com.sinaloense.Views.LoginController"
+    />
+    
+    <bean name="adminController"
+          class="com.sinaloense.Views.AdminController"
+    />
+    
     <bean name="indexController"
           class="org.springframework.web.servlet.mvc.ParameterizableViewController"
           p:viewName="index" />
+    
 
     <mvc:resources mapping="reources/**" location="resources/" />
     <mvc:annotation-driven />
