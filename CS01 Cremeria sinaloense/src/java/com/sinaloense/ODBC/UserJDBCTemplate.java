@@ -26,7 +26,7 @@ public class UserJDBCTemplate implements UserDAO{
     
     @Override
     public void create(UserModel user) {
-      String SQL = "insert into users (username,name,lastname,pass,email,id-role) values (?,?,?,?,?,?)";
+      String SQL = "insert into users (username,name,lastname,pass,email,id_role) values (?,?,?,?,?,?)";
       int x = jdbcTemplateObject.update( SQL, user.getUsername(), user.getName(), user.getLastname(),
               user.getPass(), user.getEmail(), user.getId_role());
       System.out.println("Created Record user");
