@@ -4,7 +4,11 @@
     Author     : codeando
 --%>
 
+<%@taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
+<%@taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+
+<spring:url value="cs01_cremeria_sinaloense/" var="base" />
 
 <footer class="page-footer font-small text-white bg-dark pt-4">
     <div class="container-fluid text-center text-md-left">
@@ -37,4 +41,4 @@
 </footer>
 
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
+<script src="<c:url value='${base}resources/app.js'/>"></script>
