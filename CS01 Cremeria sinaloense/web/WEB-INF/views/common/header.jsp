@@ -4,32 +4,57 @@
     Author     : codeando
 --%>
 
-<nav class="navbar navbar navbar-expand-lg navbar-dark bg-primary">
-    <a class="navbar-brand" href="#">Practica 1</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="/HelloWord">Inicio</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/HelloWord/home.htm">Formulario</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/HelloWord/imc.htm">IMC</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/HelloWord/multiplicar.htm">Multiplicar</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/HelloWord/primos.htm">Primos</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/HelloWord/datosform.htm">Datos</a>
-            </li>
-        </ul>
-    </div>
-</nav>
+<%@taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
+<%@taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 
+<spring:url value="/resources/" var="base" />
+
+<!--
+header-img start 
+============================== -->
+<section id="hero-area">
+    <img class="img-responsive" src="${base}images/header.jpg" alt="">
+</section>
+<!--
+Header start 
+============================== -->
+<nav id="navigation">
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="block">
+                <nav class="navbar navbar-default">
+                  <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                          <a class="navbar-brand" href="#">
+                            <img src="images/logo.png" alt="Logo">
+                          </a>
+
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                      <ul class="nav navbar-nav navbar-right" id="top-nav">
+                        <li><a href="#hero-area">Home</a></li>
+                        <li><a href="#about-us">about us</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#price">menu</a></li>
+                        <li><a href="#subscribe">news</a></li>
+                        <li><a href="#contact-us">contacts</a></li>
+                      </ul>
+                    </div><!-- /.navbar-collapse -->
+                  </div><!-- /.container-fluid -->
+                </nav>
+            </div>
+        </div><!-- .col-md-12 close -->
+    </div><!-- .row close -->
+</div><!-- .container close -->
+</nav><!-- header close -->
