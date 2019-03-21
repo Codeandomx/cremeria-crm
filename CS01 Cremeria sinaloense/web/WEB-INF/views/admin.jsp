@@ -13,19 +13,22 @@
 <html lang="es">
     <head>
         <title>Programación web con java</title>
-        <jsp:include page="common/head.jsp"/>
+        <jsp:include page="common/adminhead.jsp"/>
     </head>
 
-    <jsp:include page="common/header.jsp"/>
-    
     <body>
-        <div class="container">
-            <!-- Inicio modificar -->
-            <h1>CS01 Cremeria sinaloense</h1>
-            <h3>Projecto web</h3>
-            <!-- Fin modificar -->
-        </div>
         
-        <jsp:include page="common/footer.jsp"/>
+        <jsp:include page="common/adminheader.jsp"/>
+        <section id="wrapper">
+            <section id="contenido">
+                <jsp:include page="common/adminmenu.jsp"/>
+	        <article id="contenido_b">
+	            Hola
+	        </article>
+	    </section>
+	    </section>
+        </section>
+        <jsp:include page="common/adminfooter.jsp"/>
+      
     </body>
 </html>

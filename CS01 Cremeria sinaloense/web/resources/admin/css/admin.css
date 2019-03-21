@@ -1,0 +1,358 @@
+/************************************************
+Archivo css para el admin
+
+Proyecto: Codeando.org
+Author: Paulo Andrade
+Email: source.compu@gmail.com
+Web: http://www.pauloandrade1.com
+************************************************/
+
+/*******************************************************
+OPCIONES GENERALES
+*******************************************************/
+@font-face{
+	font-family: 'icomoon';
+	src: url('/fonts/icomoon.eot');
+	src: url('/fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+	url('/fonts/icomoon.svg#icomoon') format('svg'),
+	url('/fonts/icomoon.woff') format('woff'),
+	url('/fonts/icomoon.ttf') format('truetype');
+	font-weight: normal; font-style: normal;
+}
+*
+{
+	margin: 0;
+	padding: 0;
+}
+a
+{
+	color: #222;
+	text-decoration: none;
+}
+a:hover
+{
+	text-decoration: none;
+}
+a:visited
+{
+	color: #222;
+}
+body
+{
+	background: #C6D2FC;
+	color: #222;
+	font-family: Chivo, arial, "Helvetica";
+	font-size: 16px;
+	letter-spacing: 0;
+	width: 100%;
+}
+html
+{
+	height: 101%;
+}
+option
+{
+	padding: 5px;
+	transition: all 0.5s ease-in-out;
+}
+option:hover
+{
+	cursor: pointer;
+}
+pre
+{
+	background: #272822;
+	border-radius: 3px;
+	color: #fff;
+	margin-bottom: 15px;
+	overflow-x: auto;
+	padding: 10px;
+	width: 95%;
+}
+select
+{
+	border: 1px solid #1B7FCC;
+}
+#wrapper
+{
+	background: #fcfcfc;
+	border-left: 10px solid #E0E0F0;
+	border-right: 10px solid #E0E0F0;
+	margin: 0 auto;
+	max-width: 1200px;
+	min-height: 600px;
+	padding: 15px;
+}
+.alert
+{
+    background-color: #FFFFCC;
+    border: 1px solid #CCC;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    min-height: 50px;
+    padding: 10px;
+}
+.alert img
+{
+    float: left;
+    width: 50px;
+}
+.center
+{
+	text-align: center;
+}
+.center a
+{
+	transition: all 0.5s ease-in-out;
+}
+.center a:hover
+{
+	color: #999;
+	text-decoration: underline;
+}
+.count
+{
+	background: #1F6177;
+	color: #fff;
+	padding: 5px;
+}
+.error
+{
+	background: #F37A43;
+	color: #fff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding: 10px 0;
+	text-align: center;
+	font-size: 1.1em;
+	font-weight: bold;
+	transform: translatey(-60px);
+	transition-duration: .25s;
+	z-index: 999;
+}
+.icon-back:before
+{
+	font-family: 'icomoon';
+	content: "\e617";
+	font-size: 16px;
+	color: #222;
+}
+.input
+{
+	border:1px solid #1B7FCC;
+	border-radius: 1px;
+	box-shadow:
+        0 1px 2px 0 rgba(253,252,252,.35) inset,
+        0 -1px 2px 0 rgba(0,0,0,.15) inset;
+    font-size: 1em;
+	padding: 5px;
+	width: 70%;
+	transition: all 0.5s ease-in-out;
+}
+.input_tema
+{
+	border:1px solid #1B7FCC;
+	border-radius: 1px;
+	box-shadow:
+        0 1px 2px 0 rgba(253,252,252,.35) inset,
+        0 -1px 2px 0 rgba(0,0,0,.15) inset;
+    font-size: 1em;
+	padding: 5px;
+	width: 97%;
+	transition: all 0.5s ease-in-out;
+}
+textarea.input_tema
+{
+	min-width: 97%;
+	max-width: 97%;
+	min-height: 100px;
+}
+.input:focus, .input_tema:focus
+{
+	background: #FCFA94;
+}
+.pprincipal
+{
+	background: #C6D2FC;
+	color: #0F1925;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	padding: 5px 0;
+	text-align: center;
+}
+.step
+{
+	background: #EA6A44;
+	color: #fcfcfc;
+	border: 1px solid #000;
+	margin-bottom: 10px;
+	padding: 10px;
+}
+.submit
+{
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	box-shadow:
+        0 1px 2px 0 rgba(253,252,252,.35) inset,
+        0 -1px 2px 0 rgba(0,0,0,.15) inset;
+	padding: 5px 10px;
+	background: #1B7FCC;
+	color: #fcfcfc;
+	transition: all 0.5s ease-in-out;
+}
+.submit:hover
+{
+	background: #1B7Fff;
+	box-shadow: 0 1px 2px 0 rgba(0,0,0,.15) inset;
+	cursor: pointer;
+	text-shadow: 0px 0px 2px rgba(255,255,255,1);
+}
+.success
+{
+	background-color: green;
+	color: #fff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding: 10px 0;
+	text-align: center;
+	font-size: 1.1em;
+	font-weight: bold;
+	transform: translatey(-60px);
+	.margin-top: -60px;
+	transition-duration: .25s;
+	z-index: 999;
+}
+
+/*******************************************************
+HEADER
+*******************************************************/
+header
+{
+	background: #1B7FCC;
+    color: #fcfcfc;
+	text-align: left;
+	width: 100%;
+}
+header img
+{
+	border: 1px dashed #fcfcfc;
+	border-radius: 50%;
+	display: inline-block;
+	height: 40px;
+	padding: 4px;
+	width: 40px;
+}
+header h1
+{
+	display: inline-block;
+	font-size: 1.5em;
+	margin-top: 10px;
+	vertical-align: top;
+}
+
+/*******************************************************
+CONTENIDO
+*******************************************************/
+#contenido
+{
+	width:100%;
+}
+#contenido_a
+{
+	display:inline-block;
+	padding: 0 15px;
+	vertical-align: top;
+	width: 22%;
+}
+#contenido_b{
+	display:inline-block;
+	padding: 0 15px 20px 15px;
+	vertical-align: top;
+	width: 70%;
+}
+#contenido_b p{
+	margin-bottom: 15px;
+}
+#show_logo
+{
+	text-align: center;
+}
+#show_logo img
+{
+	max-width: 300px;
+	max-height: 300px;
+	border: 3px solid #ccc;
+}
+#show_avatar
+{
+	text-align: center;
+}
+#show_avatar img
+{
+	max-width: 300px;
+	max-height: 300px;
+	border: 3px solid #ccc;
+}
+
+/*******************************************************
+MENU
+*******************************************************/
+
+#menu
+{
+	border: 1px solid #ddd;
+	text-align: center;
+	width: 100%;
+}
+#menu a
+{
+	font-weight: bold;
+	padding-left: 15px;
+	padding-right: 30px;
+	transition: all 0.5s ease-in-out;
+}
+#menu a:hover
+{
+	color: #fcfcfc;
+}
+#menu li
+{
+	border-bottom: 1px dashed #ddd;
+	border-left: 5px solid #fcfcfc;
+	display: inline-block;
+	margin: 0 auto;
+	padding: 10px 0;
+	text-align: left;
+	width: 90%;
+	transition: all 0.5s ease-in-out;
+}
+#menu li:hover{
+	border-left: 5px solid #E8742A;
+	background: #219BFF;
+	color: #fcfcfc;
+}
+#menu li:last-child
+{
+	border-bottom: 0;
+}
+
+/*******************************************************
+FOOTER
+*******************************************************/
+footer
+{
+	background: #212020;
+	padding: 20px 0;
+	text-align: center;
+}
+footer p
+{
+	color: #ccc;
+	font-size: 0.9em;
+	padding: 15px 0;
+}
